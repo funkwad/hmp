@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "hmp"
+version = "0.1.0"
+description = "My project based upon hypermodern-python tutorial."
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/funkwad/hmp"
+repository = "https://github.com/funkwad/hmp"
+authors = ["Hypermodern Python <hmp-example@beers.org>"]
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.2"
+
+[tool.poetry.scripts]
+hmp = "hmp.console:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
