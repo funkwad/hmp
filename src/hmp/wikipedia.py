@@ -16,4 +16,3 @@ def random_page(language="en"):
     except requests.RequestException as error:
         message = str(error)
         raise click.ClickException(message)
-
