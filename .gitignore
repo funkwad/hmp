@@ -18,6 +18,9 @@ MANIFEST
 # pyenv
 .python-version
 
+# pytype
+.pytype/
+
 # Emacs
 *#
 .#*
