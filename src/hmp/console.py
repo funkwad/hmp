@@ -1,5 +1,6 @@
 #!python
-"""Main file for Hypermodern Python tutorial setup chapter."""
+"""Command-line interface for hmp project."""
+
 import textwrap
 
 import click
