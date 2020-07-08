@@ -1,6 +1,12 @@
 The hmp Project
 ===============
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   license
+
 My take on the example project for the
 `Hypermodern Python <https://cjolowicz.github.io/posts/hypermodern-python-01-setup>`_
 article series.
