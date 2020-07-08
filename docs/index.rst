@@ -6,6 +6,7 @@ The hmp Project
    :maxdepth: 1
 
    license
+   reference
 
 My take on the example project for the
 `Hypermodern Python <https://cjolowicz.github.io/posts/hypermodern-python-01-setup>`_
