@@ -1,4 +1,6 @@
 #!python
+"""Package-wide test fixtures."""
+
 from unittest.mock import Mock
 
 from _pytest.config import Config

@@ -1,4 +1,6 @@
 #!python
+"""Test cases for the wikipedia module."""
+
 from unittest.mock import Mock
 
 import click
