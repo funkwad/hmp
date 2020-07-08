@@ -14,7 +14,14 @@ from hmp import console
 
 @pytest.fixture
 def runner() -> CliRunner:
+    """Fixture for invoking command-line interfaces."""
     return click.testing.CliRunner()
+
+
+@pytest.fixture
+def mock_wikipedia_random_page(mocker: MockFixture) -> Mock:
+    """Fixture for mocking wikipedia.random_page()."""
+    return mocker.patch("hmp.wikipedia.random_page")
 
 
 def test_main_succeeds(runner: CliRunner, mock_requests_get: Mock) -> None:
@@ -52,11 +59,6 @@ def test_main_prints_message_on_request_error(
     mock_requests_get.side_effect = requests.RequestException
     result = runner.invoke(console.main)
     assert "Error" in result.output
-
-
-@pytest.fixture
-def mock_wikipedia_random_page(mocker: MockFixture) -> Mock:
-    return mocker.patch("hmp.wikipedia.random_page")
 
 
 def test_main_uses_specified_language(
