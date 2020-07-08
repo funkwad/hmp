@@ -21,6 +21,9 @@ MANIFEST
 # pytype
 .pytype/
 
+# Documentation build
+/docs/_build/
+
 # Emacs
 *#
 .#*
