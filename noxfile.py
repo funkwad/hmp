@@ -103,3 +103,12 @@ def black(session: Session) -> None:
     args = session.posargs or locations
     install_with_constraints(session, "black")
     session.run("black", *args)
+
+
+@nox.session(python=["3.8", "3.7"])
+def xdoctest(session: Session) -> None:
+    """Run examples with xdoctest."""
+    args = session.posargs or ["all"]
+    session.run("poetry", "install", "--no-dev", external=True)
+    install_with_constraints(session, "xdoctest")
+    session.run("python", "-m", "xdoctest", package, *args)
