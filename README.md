@@ -1,4 +1,4 @@
-[![Tests](https://github.com/funkwad/hmp/workflows/tests/badge.svg)](https://github.com/funkwad/hmp/actions?workflow=tests)
+[![Tests](https://github.com/funkwad/hmp/workflows/Tests/badge.svg)](https://github.com/funkwad/hmp/actions?workflow=tests)
 
 # hmp
 
